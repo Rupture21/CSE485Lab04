@@ -2,29 +2,25 @@
 
 @section('content')
     <div class="container">
-        <h1>Sửa Book</h1>
-        <form action="{{ route('books.update', $book->id) }}" method="POST">
+        <h1>Sửa Reader</h1>
+        <form action="{{ route('readers.update', $reader->id) }}" method="POST">
             @csrf
             @method('PUT')
             <div class="form-group">
                 <label for="name">Tên</label>
-                <input type="text" class="form-control" id="name" name="name" value="{{ $book->name }}" required>
+                <input type="text" class="form-control" id="name" name="name" value="{{ $reader->name }}" required>
             </div>
             <div class="form-group">
-                <label for="author">Tác giả</label>
-                <textarea class="form-control" id="author" name="author" required>{{ $book->author }}</textarea>
+                <label for="author">Năm sinh</label>
+                <textarea class="form-control" id="birthday" name="birthday" required>{{ $reader->birthday }}</textarea>
             </div>
             <div class="form-group">
-                <label for="category">Thể loại</label>
-                <textarea class="form-control" id="category" name="category">{{ $book->category }}</textarea>
+                <label for="category">Địa chỉ</label>
+                <textarea class="form-control" id="address" name="address">{{ $reader->address }}</textarea>
             </div>
             <div class="form-group">
-                <label for="year">Năm</label>
-                <textarea class="form-control" id="year" name="year">{{ $book->year }}</textarea>
-            </div>
-            <div class="form-group">
-                <label for="quantity">Số lượng</label>
-                <textarea class="form-control" id="quantity" name="quantity">{{ $book->quantity }}</textarea>
+                <label for="year">SĐT</label>
+                <textarea class="form-control" id="phone" name="phone">{{ $reader->phone }}</textarea>
             </div>
             <button type="submit" class="btn btn-primary">Lưu</button>
         </form>

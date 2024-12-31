@@ -9,11 +9,11 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Name</th>
-                    <th>Author</th>
-                    <th>Category</th>
-                    <th>Year</th>
-                    <th>Quantity</th>
+                    <th>Tên sách</th>
+                    <th>Tác giả</th>
+                    <th>Thể loại</th>
+                    <th>Năm</th>
+                    <th>Số lượng</th>
                 </tr>
             </thead>
             <tbody>
